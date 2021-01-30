@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: row;
   width: 100vw;
-  overflow-x: auto;
+  overflow: hidden;
 
   .section {
     width: 70vw;
+    height: 90vh;
     border: 2px solid pink;
-    height: 70vh;
     flex-shrink: 0;
   }
 }

@@ -1,6 +1,7 @@
 import React, { RefObject } from 'react';
 import styles from './Slider.module.scss';
 import PropTypes from 'prop-types';
+import projects from '../projects/projects';
 
 interface ISlider {
   refs: Array<RefObject<HTMLElement>>;
@@ -13,7 +14,14 @@ const Slider: React.FC<ISlider> = ({ refs }) => {
         ED
       </section>
       <section ref={refs[1]} className={styles.section}>
-        PROJECTS
+        {projects.map((project, i) => (
+          <div key={i}>
+            <p>{project.name}</p>
+            <p>{project.description}</p>
+            <p>{project.url}</p>
+            <p>{project.github}</p>
+          </div>
+        ))}
       </section>
       <section ref={refs[2]} className={styles.section}>
         SKILLS CONTACT

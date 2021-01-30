@@ -1,0 +1,11 @@
+.Header {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+
+  ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+  }
+}

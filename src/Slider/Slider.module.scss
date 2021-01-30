@@ -1,0 +1,13 @@
+.Slider {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  overflow-x: auto;
+
+  .section {
+    width: 70vw;
+    border: 2px solid pink;
+    height: 70vh;
+    flex-shrink: 0;
+  }
+}

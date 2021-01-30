@@ -1,6 +1,5 @@
 import React, { RefObject } from 'react';
 import styles from './Header.module.scss';
-import PropTypes from 'prop-types';
 
 interface IHeader {
   refs: Array<RefObject<HTMLElement>>;
@@ -35,10 +34,6 @@ const Header: React.FC<IHeader> = ({ refs }) => {
       </ul>
     </header>
   );
-};
-
-Header.propTypes = {
-  refs: PropTypes.array.isRequired,
 };
 
 export default Header;

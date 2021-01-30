@@ -1,0 +1,31 @@
+.Slider {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  overflow: hidden;
+
+  section {
+    display: flex;
+    width: 70vw;
+    height: 90vh;
+    border: 2px solid pink;
+    flex-shrink: 0;
+
+    &.aboutMe {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &.projects {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  
+    &.skills {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

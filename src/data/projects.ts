@@ -9,7 +9,7 @@ const projects = [
 
   {
     name: 'Serverless Chat App',
-    description: 'A real-time chat room app built with React, AWS Gateway API, Lambda and DynamoDB.',
+    description: 'A real-time chat room app built with React, Python, AWS Gateway API, Lambda and DynamoDB.',
     url: 'https://serverless-d0cc8.web.app/',
     github: 'https://github.com/edwardhorsey/serverless-chat-app',
   },
@@ -48,6 +48,7 @@ const projects = [
     name: 'Cleanup',
     description: 'A python script for cleaning up your downloads folder.',
     url: 'https://github.com/edwardhorsey/downloads-folder-cleanup',
+    github: 'https://github.com/edwardhorsey/euclidean-rhythm',
   },
 
   {

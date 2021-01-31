@@ -1,33 +1,44 @@
 .Project {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 200px;
+  justify-content: space-between;
+  width: 350px;
+  height: 220px;
+  padding: 10px 20px;
+  margin: 0 10px;
   overflow: hidden;
   border: 2px solid yellow;
-  filter: grayscale(80%);
+  filter: grayscale(85%);
 
   &:hover {
     filter: grayscale(0);
   }
 
-  .icons {
+  .content {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: blanchedalmond;
+    height: 100%;
 
-    a {
-      color: black;
-
-      &:visited {
+    .icons {
+      display: flex;
+      justify-content: space-evenly;
+  
+      a {
         color: black;
-      }
-
-      .icon {
-        width: 30px;
-        height: 30px;
+  
+        &:visited {
+          color: black;
+        }
+  
+        .icon {
+          width: 30px;
+          height: 30px;
+        }
       }
     }
-    
   }
 
   &.background1 {

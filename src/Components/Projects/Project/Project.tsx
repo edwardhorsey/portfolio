@@ -22,15 +22,17 @@ const Project: React.FC<IProject> = ({ project }) => {
 
   return (
     <article className={style} key={nanoid()}>
-      <p>{name}</p>
-      <p>{description}</p>
-      <div className={styles.icons}>
-        <a href={url} rel="noreferrer" target="_blank">
-          <FontAwesomeIcon className={styles.icon} icon={['fas', 'eye']} />
-        </a>
-        <a href={github} rel="noreferrer" target="_blank">
-          <FontAwesomeIcon className={styles.icon} icon={['fab', 'github']} />
-        </a>
+      <div className={styles.content}>
+        <h3>{name}</h3>
+        <p>{description}</p>
+        <div className={styles.icons}>
+          <a href={url} rel="noreferrer" target="_blank">
+            <FontAwesomeIcon className={styles.icon} icon={['fas', 'eye']} />
+          </a>
+          <a href={github} rel="noreferrer" target="_blank">
+            <FontAwesomeIcon className={styles.icon} icon={['fab', 'github']} />
+          </a>
+        </div>
       </div>
     </article>
   );

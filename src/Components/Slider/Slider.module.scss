@@ -25,7 +25,10 @@
     &.projects {
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
       background-color: $primaryBlue;
+      padding: 20px;
     }
 
     &.skills {

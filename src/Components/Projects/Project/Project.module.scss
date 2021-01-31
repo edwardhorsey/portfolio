@@ -1,0 +1,80 @@
+.Project {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border: 2px solid yellow;
+  filter: grayscale(80%);
+
+  &:hover {
+    filter: grayscale(0);
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      color: black;
+
+      &:visited {
+        color: black;
+      }
+
+      .icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    
+  }
+
+  &.background1 {
+    background-image: url("../../../images/project-one.png");
+    background-position: center;
+  }
+
+  &.background2 {
+    background-image: url("../../../images/project-two.jpg");
+    background-position: bottom;
+    background-size: 50%;
+    background-repeat: repeat;
+  }
+
+  &.background3 {
+    background-image: url("../../../images/project-three.png");
+    background-position: center;
+  }
+
+  &.background4 {
+    background-image: url("../../../images/project-four.png");
+    background-size: 25%;
+    background-repeat: repeat;
+  }
+
+  &.background5 {
+    background-image: url("../../../images/project-five.jpg");
+    background-size: cover;
+  }
+
+  &.background6 {
+    background-image: url("../../../images/project-six.png");
+    background-size: 200%;
+  }
+
+  &.background7 {
+    background-image: url("../../../images/project-seven.png");
+    background-size: 25%;
+    background-repeat: repeat;
+    background-position-y: 60px;
+  }
+
+  &.background8 {
+    background-image: url("../../../images/project-eight.png");
+    background-size: cover;
+    background-size: 18%;
+    background-repeat: repeat;
+    background-position-x: -40px;
+  }
+}

@@ -6,26 +6,24 @@
 
   section {
     display: flex;
-    width: 70vw;
+    width: 90vw;
     height: 90vh;
-    border: 2px solid pink;
+    border: 2px solid rgb(90, 90, 90);
     flex-shrink: 0;
 
     &.aboutMe {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      article {
+        max-width: 700px;
+      }
     }
   
     &.projects {
       flex-direction: row;
       flex-wrap: wrap;
-    }
-  
-    &.skills {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
     }
   }
 }

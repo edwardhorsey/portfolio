@@ -54,7 +54,21 @@ const Skills: React.FC = () => {
           <img className={`${styles.skillIcon} ${styles.skillIconImg}`} src={typescript} />
         </li>
       </ul>
-      <h2>Get in touch</h2>
+      <h2>Get in touch 👇</h2>
+      <ul className={styles.contactList}>
+        <li>
+          <FontAwesomeIcon className={styles.contactIcon} icon={['fas', 'download']} />
+        </li>
+        <li>
+          <FontAwesomeIcon className={styles.contactIcon} icon={['fas', 'at']} />
+        </li>
+        <li>
+          <FontAwesomeIcon className={styles.contactIcon} icon={['fab', 'linkedin']} />
+        </li>
+        <li>
+          <FontAwesomeIcon className={styles.contactIcon} icon={['fab', 'github']} />
+        </li>
+      </ul>
     </article>
   );
 };

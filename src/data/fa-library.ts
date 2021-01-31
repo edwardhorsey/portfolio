@@ -10,8 +10,9 @@ import {
   faPhp,
   faGitAlt,
   faAws,
+  faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
-import { faUser, faPalette, faEnvelopeOpen, faEye } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faPalette, faEnvelopeOpen, faEye, faDownload, faAt } from '@fortawesome/free-solid-svg-icons';
 
 export default library.add(
   faGithub,
@@ -19,6 +20,8 @@ export default library.add(
   faPalette,
   faEnvelopeOpen,
   faEye,
+  faDownload,
+  faAt,
   faHtml5,
   faSass,
   faJsSquare,
@@ -28,4 +31,5 @@ export default library.add(
   faPhp,
   faGitAlt,
   faAws,
+  faLinkedin,
 );

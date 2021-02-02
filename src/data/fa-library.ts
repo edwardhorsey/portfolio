@@ -12,7 +12,7 @@ import {
   faAws,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
-import { faUser, faPalette, faEnvelopeOpen, faEye, faDownload, faAt } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faPalette, faEnvelopeOpen, faEye, faDownload, faAt, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 
 export default library.add(
   faGithub,
@@ -22,6 +22,7 @@ export default library.add(
   faEye,
   faDownload,
   faAt,
+  faWindowClose,
   faHtml5,
   faSass,
   faJsSquare,

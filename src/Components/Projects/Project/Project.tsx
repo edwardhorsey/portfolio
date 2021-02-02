@@ -31,7 +31,7 @@ const Project: React.FC<IProject> = ({ project }) => {
         className={styles.projectModal}
       >
         <section className={styles.content}>
-          <button className={styles.closeModal} onClick={toggleModal} />
+          <FontAwesomeIcon className={styles.closeModal} onClick={toggleModal} icon={['fas', 'window-close']} />
           <div className={`${styles.projectContentImage} ${styles['background' + backgroundImg]}`}>
             <h2>{name}</h2>
           </div>

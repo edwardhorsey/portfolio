@@ -1,4 +1,6 @@
-const projects = [
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
+
+export const projects = [
   {
     name: 'Mobile Baccarat',
     description:
@@ -68,4 +70,19 @@ const projects = [
   },
 ];
 
-export default projects;
+interface skill {
+  text: string;
+  iconCode: IconProp;
+}
+
+export const skills: Array<skill> = [
+  { text: 'HTML5', iconCode: ['fab', 'html5'] }, 
+  { text: 'Sass', iconCode: ['fab', 'sass'] }, 
+  { text: 'JavaScript', iconCode: ['fab', 'js-square'] },
+  { text: 'React', iconCode: ['fab', 'react']   },
+  { text: 'Python', iconCode: ['fab', 'python'] },
+  { text: 'Node.js', iconCode: ['fab', 'node-js'] },
+  { text: 'PHP', iconCode: ['fab', 'php'] },
+  { text: 'Git', iconCode: ['fab', 'git-alt'] },
+  { text: 'AWS', iconCode: ['fab', 'aws'] }
+];

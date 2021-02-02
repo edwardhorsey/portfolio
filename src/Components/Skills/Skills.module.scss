@@ -41,9 +41,29 @@
     list-style-type: none;
     width: 100%;
 
-    .contactIcon {
-      width: 60px;
-      height: 60px;
+    li {
+
+      a {
+        color: black;
+
+        &:visited {
+          color: black;
+        }
+
+        .contactIcon {
+          width: 70px;
+          height: 70px;
+          padding: 5px;
+          border-radius: $borderRadiusSmall;
+    
+          cursor: pointer;
+          &:hover {
+            background-color: $primaryYellow;
+            transition-duration: $durationMedium;
+            transition-property: background-color;
+          }
+        }
+      }
     }
   }
 }

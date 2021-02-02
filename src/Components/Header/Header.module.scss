@@ -19,9 +19,13 @@
     list-style-type: none;
 
     li {
+      border-radius: $borderRadiusSmall;
       cursor: pointer;
+
       &:hover {
         background-color: $primaryYellow;
+        transition-duration: $durationMedium;
+        transition-property: background-color;
       }
 
       .headerIcon {

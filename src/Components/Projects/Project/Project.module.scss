@@ -14,56 +14,10 @@
 
   &:hover {
     filter: grayscale(0);
-    transform: scale(1.05);
     z-index: 2;
-  }
-
-  &.background1 {
-    background-image: url("../../../images/project-one.png");
-    background-position: center;
-  }
-
-  &.background2 {
-    background-image: url("../../../images/project-two.jpg");
-    background-position: bottom;
-    background-size: 50%;
-    background-repeat: repeat;
-  }
-
-  &.background3 {
-    background-image: url("../../../images/project-three.png");
-    background-position: center;
-  }
-
-  &.background4 {
-    background-image: url("../../../images/project-four.png");
-    background-size: 25%;
-    background-repeat: repeat;
-  }
-
-  &.background5 {
-    background-image: url("../../../images/project-five.jpg");
-    background-size: cover;
-  }
-
-  &.background6 {
-    background-image: url("../../../images/project-six.png");
-    background-size: 200%;
-  }
-
-  &.background7 {
-    background-image: url("../../../images/project-seven.png");
-    background-size: 25%;
-    background-repeat: repeat;
-    background-position-y: 60px;
-  }
-
-  &.background8 {
-    background-image: url("../../../images/project-eight.png");
-    background-size: cover;
-    background-size: 18%;
-    background-repeat: repeat;
-    background-position-x: -40px;
+    transform: scale(1.05);
+    transition-duration: $durationMedium;
+    transition-property: transform;
   }
 }
 
@@ -73,6 +27,7 @@
   height: 90vh;
   margin: auto;
   margin-top: 5vh;
+  z-index: 10;
 
   
   .content {
@@ -85,9 +40,17 @@
     padding: 40px;
 
     .closeModal {
-      width: 35px;
-      height: 35px;
-      
+      width: 45px;
+      height: 45px;
+      padding: 5px;
+      border-radius: $borderRadiusSmall;
+
+      &:hover {
+        // background-color: $primaryBlueGrey;
+        background-color: $darkGrey;
+        transition-duration: $durationMedium;
+        transition-property: background-color;
+      }
     }
 
     .projectContentImage {
@@ -102,54 +65,6 @@
       h2 {
         font-size: 60px;
         margin: 0 0 40px 40px;
-      }
-
-      &.background1 {
-        background-image: url("../../../images/project-one.png");
-        background-position: center;
-      }
-    
-      &.background2 {
-        background-image: url("../../../images/project-two.jpg");
-        background-position: bottom;
-        background-size: 50%;
-        background-repeat: repeat;
-      }
-    
-      &.background3 {
-        background-image: url("../../../images/project-three.png");
-        background-position: center;
-      }
-    
-      &.background4 {
-        background-image: url("../../../images/project-four.png");
-        background-size: 25%;
-        background-repeat: repeat;
-      }
-    
-      &.background5 {
-        background-image: url("../../../images/project-five.jpg");
-        background-size: cover;
-      }
-    
-      &.background6 {
-        background-image: url("../../../images/project-six.png");
-        background-size: 200%;
-      }
-    
-      &.background7 {
-        background-image: url("../../../images/project-seven.png");
-        background-size: 25%;
-        background-repeat: repeat;
-        background-position-y: 60px;
-      }
-    
-      &.background8 {
-        background-image: url("../../../images/project-eight.png");
-        background-size: cover;
-        background-size: 18%;
-        background-repeat: repeat;
-        background-position-x: -40px;
       }
     }
 
@@ -176,14 +91,30 @@
       
           a {
             color: black;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: 500;
+            padding: 5px;
+            border-radius: $borderRadiusSmall;
+
+            cursor: pointer;
+            &:hover {
+              background-color: $primaryYellow;
+              transition-duration: $durationMedium;
+              transition-property: background-color;
+            }
       
             &:visited {
               color: black;
             }
-      
+
             .icon {
-              width: 50px;
-              height: 50px;
+              width: 70px;
+              height: 70px;
+              padding: 5px;
+              margin-left: 5px;
             }
           }
         }
@@ -197,4 +128,52 @@
       }
     }
   }
+}
+
+.background1 {
+  background-image: url("../../../images/project-one.png");
+  background-position: center;
+}
+
+.background2 {
+  background-image: url("../../../images/project-two.jpg");
+  background-position: bottom;
+  background-size: 50%;
+  background-repeat: repeat;
+}
+
+.background3 {
+  background-image: url("../../../images/project-three.png");
+  background-position: center;
+}
+
+.background4 {
+  background-image: url("../../../images/project-four.png");
+  background-size: 25%;
+  background-repeat: repeat;
+}
+
+.background5 {
+  background-image: url("../../../images/project-five.jpg");
+  background-size: cover;
+}
+
+.background6 {
+  background-image: url("../../../images/project-six.png");
+  background-size: 200%;
+}
+
+.background7 {
+  background-image: url("../../../images/project-seven.png");
+  background-size: 25%;
+  background-repeat: repeat;
+  background-position-y: 60px;
+}
+
+.background8 {
+  background-image: url("../../../images/project-eight.png");
+  background-size: cover;
+  background-size: 18%;
+  background-repeat: repeat;
+  background-position-x: -40px;
 }

@@ -65,6 +65,8 @@
       h2 {
         font-size: 60px;
         margin: 0 0 40px 40px;
+        background-color: $darkGrey;
+        padding: 10px;
       }
     }
 
@@ -81,7 +83,7 @@
         width: 65%;
 
         p {
-          padding: 0 30px;
+          padding: 0 15%;
           text-align: center;
         }
 
@@ -132,7 +134,7 @@
         p {
           display: inline-block;
           padding: 10px;
-          margin: 10px 20px 30px 40px;
+          margin: 10px;
           background-color: $darkGrey;
           height: fit-content;
           border-radius: $borderRadiusMedium;

@@ -10,6 +10,7 @@ type ProjectObj = {
   url: string;
   github: string;
   backgroundImg: number;
+  tech: string[];
 };
 
 interface IProject {
@@ -23,7 +24,7 @@ const Project: React.FC<IProject> = ({ project }) => {
     console.log('running', e);
     setModal(!modal);
   }
-  const { name, description, url, github, backgroundImg } = project;
+  const { name, description, url, github, backgroundImg, tech } = project;
   const style = `${styles.Project} ${styles['background' + backgroundImg]}`;
 
   return (
@@ -52,7 +53,7 @@ const Project: React.FC<IProject> = ({ project }) => {
               </div>
             </div>
             <div className={styles.techUsed}>
-              Tech used
+              {tech.map(item => <p>{item}</p>)}
             </div>
           </div>
         </section>

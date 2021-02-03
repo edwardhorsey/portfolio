@@ -8,28 +8,28 @@ interface IHeader {
 }
 
 const Header: React.FC<IHeader> = ({ refs }) => {
+  const scroll = (slide: RefObject<HTMLElement>) => {
+    return slide.current?.scrollIntoView({ behavior: 'smooth'});
+  }
   return (
     <header className={styles.Header}>
       <h1>Edward Horsey</h1>
       <ul>
         <li
-          onClick={() => {
-            refs[0].current?.scrollIntoView({ behavior: 'smooth' });
-          }}
+          onClick={() => scroll(refs[0])}
+          // onMouseOver={() => scroll(refs[0])}
         >
           <FontAwesomeIcon className={styles.headerIcon} icon={['fas', 'user']} />
         </li>
         <li
-          onClick={() => {
-            refs[1].current?.scrollIntoView({ behavior: 'smooth' });
-          }}
-        >
+          onClick={() => scroll(refs[1])}
+          // onMouseOver={() => scroll(refs[1])}
+          >
           <FontAwesomeIcon className={styles.headerIcon} icon={['fas', 'palette']} />
         </li>
         <li
-          onClick={() => {
-            refs[2].current?.scrollIntoView({ behavior: 'smooth' });
-          }}
+          onClick={() => scroll(refs[2])}
+          // onMouseOver={() => scroll(refs[2])}
         >
           <FontAwesomeIcon className={styles.headerIcon} icon={['fas', 'envelope-open']} />
         </li>

@@ -2,8 +2,7 @@
 
 .Project {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   width: 350px;
   height: auto;
   min-height: 220px;
@@ -18,6 +17,14 @@
     transform: scale(1.05);
     transition-duration: $durationMedium;
     transition-property: transform;
+  }
+
+  h2 {
+    background-color: $primaryYellow;
+    border-radius: $borderRadiusMedium;
+    padding: 5px;
+    width: fit-content;
+    height: fit-content;
   }
 }
 
@@ -46,7 +53,6 @@
       border-radius: $borderRadiusSmall;
 
       &:hover {
-        // background-color: $primaryBlueGrey;
         background-color: $darkGrey;
         transition-duration: $durationMedium;
         transition-property: background-color;
@@ -67,6 +73,7 @@
         margin: 0 0 40px 40px;
         background-color: $darkGrey;
         padding: 10px;
+        border-radius: $borderRadiusMedium;
       }
     }
 
@@ -128,8 +135,9 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        align-items: center;
+        align-items: flex-start;
         width: 35%;
+        padding-top: 20px;
 
         p {
           display: inline-block;

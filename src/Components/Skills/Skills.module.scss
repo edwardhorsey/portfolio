@@ -8,11 +8,24 @@
   width: fit-content;
   padding: 0 15%;
 
+  h2 {
+    color: $primaryBlue;
+  }
+
+  &:hover {
+    background-color: $primaryWhite;
+    transition-duration: $durationMedium;
+    transition-property: background-color;
+  }
+
   .skillsList {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
+    background-color: $white;
+    border-radius: $borderRadiusMedium;
+    padding: 20px;
 
     li {
       display: flex;
@@ -40,6 +53,9 @@
     justify-content: space-around;
     list-style-type: none;
     width: 100%;
+    background-color: $white;
+    border-radius: $borderRadiusMedium;
+    padding: 20px;
 
     li {
       a {

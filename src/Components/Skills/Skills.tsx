@@ -9,7 +9,7 @@ const Skills: React.FC = () => {
   return (
     <article className={styles.Skills}>
       <h2>What I do</h2>
-      <ul className={styles.skillsList}>
+      <ul className={`${styles.skillsList} ${styles.contentBox}`}>
         {skills.map(({ text, iconCode }) => (
           <li>
             <span>{text}</span>
@@ -26,7 +26,7 @@ const Skills: React.FC = () => {
         </li>
       </ul>
       <h2>Get in touch 👇</h2>
-      <ul className={styles.contactList}>
+      <ul className={`${styles.contactList} ${styles.contentBox}`}>
         <li>
           <a href="" target="_blank" rel="noreferrer" >
             <FontAwesomeIcon className={styles.contactIcon} icon={['fas', 'download']} />

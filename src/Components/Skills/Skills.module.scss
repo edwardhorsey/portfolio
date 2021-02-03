@@ -9,6 +9,7 @@
   padding: 0 15%;
 
   h2 {
+    font-size: 28px;
     color: $primaryBlue;
   }
 
@@ -18,64 +19,68 @@
     transition-property: background-color;
   }
 
-  .skillsList {
+  .contentBox {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style-type: none;
+    justify-content: space-between;
+    flex-direction: column;
+    min-height: 350px;
     background-color: $white;
     border-radius: $borderRadiusMedium;
     padding: 20px;
 
-    li {
+    .skillsList {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      margin: 10px 0;
+      flex-wrap: wrap;
+      list-style-type: none;
 
-      span {
-        margin: 0 10px 0 30px;
-      }
-      .skillIcon {
-        width: 60px;
-        height: 60px;
+      li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 10px 0;
 
-        &Img {
-          padding: 3px;
+        span {
+          margin: 0 10px 0 30px;
+        }
+        .skillIcon {
+          width: 60px;
+          height: 60px;
+
+          &Img {
+            padding: 3px;
+          }
         }
       }
     }
-  }
 
-  .contactList {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    width: 100%;
-    background-color: $white;
-    border-radius: $borderRadiusMedium;
-    padding: 20px;
+    .contactList {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      list-style-type: none;
+      width: 100%;
 
-    li {
-      a {
-        color: black;
-
-        &:visited {
+      li {
+        a {
           color: black;
-        }
 
-        .contactIcon {
-          width: 70px;
-          height: 70px;
-          padding: 5px;
-          border-radius: $borderRadiusSmall;
-    
-          cursor: pointer;
-          &:hover {
-            background-color: $primaryYellow;
-            transition-duration: $durationMedium;
-            transition-property: background-color;
+          &:visited {
+            color: black;
+          }
+
+          .contactIcon {
+            width: 70px;
+            height: 70px;
+            padding: 5px;
+            border-radius: $borderRadiusSmall;
+      
+            cursor: pointer;
+            &:hover {
+              background-color: $primaryYellow;
+              transition-duration: $durationMedium;
+              transition-property: background-color;
+            }
           }
         }
       }

@@ -8,6 +8,7 @@ import { skills } from '../../data/projects';
 const Skills: React.FC = () => {
   return (
     <article className={styles.Skills}>
+      <div className={styles.contentBox}>
       <h2>What I do</h2>
       <ul className={styles.skillsList}>
         {skills.map(({ text, iconCode }) => (
@@ -25,6 +26,14 @@ const Skills: React.FC = () => {
           <img className={`${styles.skillIcon} ${styles.skillIconImg}`} src={typescript} alt="TypeScript logo" />
         </li>
       </ul>
+      </div>
+
+      <div className={styles.contentBox}>
+      <p>
+        After working as a professional musician since leaving University, I decided to pursue a 12-week intensive
+        software development bootcamp at _nology. The course fueled my passion for learning new skills, logical problem
+        solving and creating meaningful applications.
+      </p>
       <h2>Get in touch 👇</h2>
       <ul className={styles.contactList}>
         <li>
@@ -48,6 +57,7 @@ const Skills: React.FC = () => {
           </a>
         </li>
       </ul>
+      </div>
     </article>
   );
 };

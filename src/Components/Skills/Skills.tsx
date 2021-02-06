@@ -29,18 +29,18 @@ const Skills: React.FC = () => {
       </div>
 
       <div className={styles.contentBox}>
-      <p>
+      <h2>Get in touch 👇</h2>
+      <p className={styles.sentence}>
         After working as a professional musician since leaving University, I decided to pursue a 12-week intensive
         software development bootcamp at _nology. The course fueled my passion for learning new skills, logical problem
         solving and creating meaningful applications.
       </p>
-      <h2>Get in touch 👇</h2>
       <ul className={styles.contactList}>
-        <li>
+        {/* <li>
           <a href="" target="_blank" rel="noreferrer" >
             <FontAwesomeIcon className={styles.contactIcon} icon={['fas', 'download']} />
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="mailto:edwardhorsey@me.com" target="_blank" rel="noreferrer" >
             <FontAwesomeIcon className={styles.contactIcon} icon={['fas', 'at']} />

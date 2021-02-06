@@ -11,13 +11,13 @@ interface ISlider {
 const Slider: React.FC<ISlider> = ({ refs }) => {
   return (
     <main className={styles.Slider}>
-      <section ref={refs[0]} className={styles.aboutMe}>
+      <section ref={refs[0]}>
         <Ed />
       </section>
       <section ref={refs[1]} className={styles.projects}>
         <Projects />
       </section>
-      <section ref={refs[2]} className={styles.skills}>
+      <section ref={refs[2]}>
         <Skills />
       </section>
     </main>

@@ -11,46 +11,5 @@
     width: 100vw;
     min-height: 85vh;
     flex-shrink: 0;
-
-    &.aboutMe {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      
-      .Ed {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        min-height: 350px;
-        background-color: $white;
-        border-radius: $borderRadiusMedium;
-        padding: 20px;
-
-        h2 {
-          font-size: 28px;
-          color: $primaryBlue;
-        }
-      }
-
-
-      &:hover {
-        background-color: $primaryWhite;
-        transition-duration: $durationMedium;
-        transition-property: background-color;
-      }
-
-      article {
-        max-width: 700px;
-      }
-    }
-  
-    &.projects {
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      background-color: $primaryBlueGrey;
-      padding: 20px;
-    }
   }
 }

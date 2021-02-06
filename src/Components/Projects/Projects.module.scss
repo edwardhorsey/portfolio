@@ -1,0 +1,12 @@
+@import "../../variables.module.scss";
+
+.Projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: $primaryBlueGrey;
+  padding: 20px;
+  width: 100%;
+}

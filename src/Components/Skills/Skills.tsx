@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { RefObject } from 'react';
 import styles from './Skills.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import firebase from '../../images/firebase.webp';
 import typescript from '../../images/ts.webp';
 import { skills } from '../../data/projects';
 
-const Skills: React.FC = () => {
+interface ISkills {
+  ref: RefObject<HTMLElement>;
+}
+
+const Skills: React.FC<ISkills> = () => {
   return (
     <article className={styles.Skills}>
       <div className={styles.contentBox}>

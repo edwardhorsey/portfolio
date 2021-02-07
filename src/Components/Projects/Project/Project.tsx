@@ -39,7 +39,9 @@ const Project: React.FC<IProject> = ({ project }) => {
         <section className={styles.content}>
           <FontAwesomeIcon className={styles.closeModal} onClick={closeModal} icon={['fas', 'window-close']} />
           <div className={`${styles.projectContentImage} ${styles['background' + backgroundImg]}`}>
-            <h2>{name}</h2>
+            <div className={styles.backgroundOverlay}>
+              <h2>{name}</h2>
+            </div>
           </div>
           <div className={styles.contentBottom}>
             <div className={styles.description}>

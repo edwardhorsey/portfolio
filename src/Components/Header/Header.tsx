@@ -17,19 +17,16 @@ const Header: React.FC<IHeader> = ({ refs }) => {
       <ul>
         <li
           onClick={() => scroll(refs[0])}
-          // onMouseOver={() => scroll(refs[0])}
         >
           <FontAwesomeIcon className={styles.headerIcon} icon={['fas', 'user']} />
         </li>
         <li
           onClick={() => scroll(refs[1])}
-          // onMouseOver={() => scroll(refs[1])}
           >
           <FontAwesomeIcon className={styles.headerIcon} icon={['fas', 'palette']} />
         </li>
         <li
           onClick={() => scroll(refs[2])}
-          // onMouseOver={() => scroll(refs[2])}
         >
           <FontAwesomeIcon className={styles.headerIcon} icon={['fas', 'envelope-open']} />
         </li>

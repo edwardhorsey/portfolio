@@ -1,13 +1,9 @@
-import React, { RefObject } from 'react';
+import React, { forwardRef } from 'react';
 import styles from './Ed.module.scss';
 
-interface IEd {
-  ref: RefObject<HTMLElement>;
-}
-
-const Ed: React.FC<IEd> = () => {
+const Ed = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <div className={styles.Ed}>
+    <div ref={ref} className={styles.Ed}>
       <article className={styles.aboutMe}>
         <h2>👋 Hi, I&apos;m Ed</h2>
         <h3>I&apos;m an Oxford based musician turned software developer.</h3>
@@ -19,6 +15,6 @@ const Ed: React.FC<IEd> = () => {
       </article>
     </div>
   );
-};
+});
 
 export default Ed;

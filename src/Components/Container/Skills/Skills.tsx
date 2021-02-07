@@ -1,22 +1,19 @@
-import React, { RefObject } from 'react';
+import React, { forwardRef } from 'react';
 import styles from './Skills.module.scss';
+import { skills } from '../../../data/projects';
+import { nanoid } from 'nanoid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import firebase from '../../../images/firebase.webp';
 import typescript from '../../../images/ts.webp';
-import { skills } from '../../../data/projects';
 
-interface ISkills {
-  ref: RefObject<HTMLElement>;
-}
-
-const Skills: React.FC<ISkills> = () => {
+const Skills = forwardRef<HTMLDivElement>((_, ref) => {
   return (
-    <article className={styles.Skills}>
+    <article ref={ref} className={styles.Skills}>
       <div className={styles.contentBox}>
       <h2>What I do</h2>
       <ul className={styles.skillsList}>
         {skills.map(({ text, iconCode }) => (
-          <li>
+          <li key={nanoid()}>
             <span>{text}</span>
             <FontAwesomeIcon className={styles.skillIcon} icon={iconCode} />
           </li>
@@ -64,6 +61,6 @@ const Skills: React.FC<ISkills> = () => {
       </div>
     </article>
   );
-};
+});
 
 export default Skills;

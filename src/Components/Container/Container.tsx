@@ -1,11 +1,11 @@
 import React, { RefObject } from 'react';
 import styles from './Container.module.scss';
-import Skills from './Skills';
-import Projects from './Projects';
 import Ed from './Ed';
+import Projects from './Projects';
+import Skills from './Skills';
 
 interface IContainer {
-  refs: Array<RefObject<HTMLElement>>;
+  refs: Array<RefObject<HTMLDivElement>>;
 }
 
 const Container: React.FC<IContainer> = ({ refs }) => {

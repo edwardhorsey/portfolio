@@ -4,7 +4,7 @@ import Container from './Components/Container';
 import Header from './Components/Header/Header';
 
 const App = (): ReactElement => {
-  const refs = [useRef<HTMLElement>(null), useRef<HTMLElement>(null), useRef<HTMLElement>(null)];
+  const refs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
 
   return (
     <div className={styles.App}>

@@ -1,9 +1,9 @@
 import React, { RefObject } from 'react';
 import styles from './Skills.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import firebase from '../../images/firebase.webp';
-import typescript from '../../images/ts.webp';
-import { skills } from '../../data/projects';
+import firebase from '../../../images/firebase.webp';
+import typescript from '../../../images/ts.webp';
+import { skills } from '../../../data/projects';
 
 interface ISkills {
   ref: RefObject<HTMLElement>;

@@ -1,8 +1,8 @@
 import React, { RefObject } from 'react';
 import styles from './Projects.module.scss';
-import { projects } from '../../data/projects';
+import { projects } from '../../../data/projects';
 import { nanoid } from 'nanoid';
-import Project from './Project';
+import Project from '../Project';
 
 interface IProjects {
   ref: RefObject<HTMLElement>;

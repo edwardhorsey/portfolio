@@ -20,7 +20,6 @@ interface IProject {
 
 const Project: React.FC<IProject> = ({ project }) => {
   const [modal, setModal] = useState(false)
-  console.log(modal);
   const openModal = () => !modal && setModal(true);
   const closeModal = () => setModal(false);
 

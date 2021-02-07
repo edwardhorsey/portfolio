@@ -1,15 +1,9 @@
 @import "../../variables.module.scss";
 
-.Slider {
+.Container {
   display: flex;
   flex-direction: column;
   overflow: hidden;
   background-color: none;
-
-  section {
-    display: flex;
-    width: 100vw;
-    min-height: 85vh;
-    flex-shrink: 0;
-  }
+  width: 100vw;
 }

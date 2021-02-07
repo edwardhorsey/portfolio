@@ -91,6 +91,7 @@ export const skills: Array<skill> = [
   { text: 'Python', iconCode: ['fab', 'python'] },
   { text: 'Node.js', iconCode: ['fab', 'node-js'] },
   { text: 'PHP', iconCode: ['fab', 'php'] },
+  { text: 'MySQL', iconCode: ['fas', 'database'] },
   { text: 'Git', iconCode: ['fab', 'git-alt'] },
-  { text: 'AWS', iconCode: ['fab', 'aws'] }
+  { text: 'AWS', iconCode: ['fab', 'aws'] },
 ];

@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { RefObject } from 'react';
 import styles from './Ed.module.scss';
 
-const Ed: React.FC = () => {
+interface IEd {
+  ref: RefObject<HTMLElement>;
+}
+
+const Ed: React.FC<IEd> = () => {
   return (
     <div className={styles.Ed}>
       <article className={styles.aboutMe}>

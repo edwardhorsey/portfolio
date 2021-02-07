@@ -1,15 +1,15 @@
-import React, { ReactElement, createRef } from 'react';
+import React, { ReactElement, useRef } from 'react';
 import styles from './App.module.scss';
-import Slider from './Components/Slider/Slider';
+import Container from './Components/Container';
 import Header from './Components/Header/Header';
 
 const App = (): ReactElement => {
-  const refs = [createRef<HTMLElement>(), createRef<HTMLElement>(), createRef<HTMLElement>()];
+  const refs = [useRef<HTMLElement>(null), useRef<HTMLElement>(null), useRef<HTMLElement>(null)];
 
   return (
     <div className={styles.App}>
       <Header refs={refs} />
-      <Slider refs={refs} />
+      <Container refs={refs} />
     </div>
   );
 };

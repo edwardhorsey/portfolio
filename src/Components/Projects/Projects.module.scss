@@ -9,4 +9,6 @@
   background-color: $primaryBlueGrey;
   padding: 20px;
   width: 100%;
+  min-height: 85vh;
+  flex-shrink: 0;
 }

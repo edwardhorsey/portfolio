@@ -1,7 +1,8 @@
 import React, { ReactElement, useRef } from 'react';
 import styles from './App.module.scss';
-import Container from './Components/Container';
 import Header from './Components/Header/Header';
+import Container from './Components/Container';
+import Footer from './Components/Footer';
 
 const App = (): ReactElement => {
   const refs = [useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null), useRef<HTMLDivElement>(null)];
@@ -10,6 +11,7 @@ const App = (): ReactElement => {
     <div className={styles.App}>
       <Header refs={refs} />
       <Container refs={refs} />
+      <Footer />
     </div>
   );
 };

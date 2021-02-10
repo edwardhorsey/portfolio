@@ -46,6 +46,10 @@
     height: 100%;
     padding: 40px;
 
+    @media only screen and (max-width: $breakpointSmall) {
+      justify-content: flex-start;
+    }
+
     .closeModal {
       width: 45px;
       height: 45px;
@@ -64,6 +68,10 @@
       width: 100%;
       height: 60%;
       margin: 0 auto;
+
+      @media only screen and (max-width: $breakpointLarge) {
+        height: 50%;
+      }
 
       .backgroundOverlay {
         width: 100%;
@@ -87,9 +95,15 @@
       h2 {
         font-size: 60px;
         margin: 0 0 20px 20px;
-        // background-color: $black;
         padding: 10px;
         border-radius: $borderRadiusMedium;
+
+        @media only screen and (max-width: $breakpointLarge) {
+          font-size: 44px;
+        }
+        @media only screen and (max-width: $breakpointMedium) {
+          font-size: 36px;
+        }
       }
     }
 
@@ -99,11 +113,15 @@
       width: 100%;
       height: 30%;
 
+      @media only screen and (max-width: $breakpointSmall) {
+        height: auto;
+      }
+
       .description {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 65%;
+        width: 70%;
 
         p {
           padding: 0 10%;
@@ -124,6 +142,13 @@
             padding: 5px;
             border-radius: $borderRadiusSmall;
 
+            @media only screen and (max-width: $breakpointMedium) {
+              font-size: 18px;
+            }
+            @media only screen and (max-width: $breakpointSmall) {
+              font-size: 16px;
+            }
+
             cursor: pointer;
             &:hover {
               background-color: $primaryYellow;
@@ -136,10 +161,19 @@
             }
 
             .icon {
-              width: 70px;
-              height: 70px;
+              width: 60px;
+              height: 60px;
               padding: 5px;
               margin-left: 5px;
+
+              @media only screen and (max-width: $breakpointMedium) {
+                width: 52px;
+                height: 52px;
+              }
+              @media only screen and (max-width: $breakpointSmall) {
+                width: 40px;
+                height: 40px;
+              }
             }
           }
         }

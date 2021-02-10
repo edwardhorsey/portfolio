@@ -8,11 +8,12 @@
   width: 100%;
   min-height: 85vh;
   flex-shrink: 0;
-  padding: 0 15%;
+  padding: 0 10%;
 
   h2 {
     font-size: 28px;
     color: $primaryBlue;
+    font-weight: 500;
   }
 
   &:hover {
@@ -50,8 +51,8 @@
           margin: 0 10px 0 30px;
         }
         .skillIcon {
-          width: 60px;
-          height: 60px;
+          width: 55px;
+          height: 55px;
 
           &Img {
             padding: 3px;
@@ -80,8 +81,8 @@
           }
 
           .contactIcon {
-            width: 70px;
-            height: 70px;
+            width: 65px;
+            height: 65px;
             padding: 5px;
             border-radius: $borderRadiusSmall;
       

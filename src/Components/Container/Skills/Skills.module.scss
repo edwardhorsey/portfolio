@@ -32,6 +32,11 @@
     border-radius: $borderRadiusMedium;
     padding: 20px;
     width: 100%;
+    margin-bottom: 20px;
+
+    &:nth-child(1) {
+      margin-top: 20px;
+    }
 
     .skillsList {
       display: flex;
@@ -47,8 +52,16 @@
         align-items: center;
         margin: 10px 0;
 
+        @media only screen and (max-width: $breakpointSmall) {
+          justify-content: space-between;
+        }
+
         span {
           margin: 0 10px 0 30px;
+
+          @media only screen and (max-width: $breakpointSmall) {
+            margin: 0 10px;
+          }
         }
         .skillIcon {
           width: 55px;

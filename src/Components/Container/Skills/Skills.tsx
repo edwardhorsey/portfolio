@@ -33,9 +33,10 @@ const Skills = forwardRef<HTMLDivElement>((_, ref) => {
       <h2>Get in touch 👇</h2>
       <p className={styles.sentence}>
         After working as a professional musician since leaving University, I decided to pursue a 12-week intensive
-        software development bootcamp at _nology. The course fueled my passion for learning new skills, logical problem
-        solving and creating meaningful applications.
+        software development bootcamp at _nology. The course fuelled my passion for learning new technologies and
+        logical problem solving and helped me launch a new career in software development.
       </p>
+      <p>Feel free to get in touch 📇</p>
       <ul className={styles.contactList}>
         {/* <li>
           <a href="" target="_blank" rel="noreferrer" >

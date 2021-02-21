@@ -13,6 +13,7 @@
   h2 {
     font-size: 28px;
     color: $primaryBlue;
+    margin-bottom: 20px;
     font-weight: 500;
   }
 
@@ -86,6 +87,10 @@
       justify-content: space-around;
       list-style-type: none;
       width: 100%;
+
+      @media only screen and (max-width: $breakpointSmall) {
+        margin-top: 20px;
+      }
 
       li {
         a {

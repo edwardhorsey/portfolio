@@ -4,7 +4,7 @@ export const projects = [
   {
     name: 'Euclidean Rhythm',
     description: 'A sequencer for playing Euclidean Rhythms. I create a lambda which generates you a downlaodable midi file saved on AWS S3. Written in React, AWS Lambda & S3',
-    url: 'https://euclidean-rhythm.s3-eu-west-1.amazonaws.com/index.html',
+    url: 'https://euclidean-ryhthm.web.app/',
     github: 'https://github.com/edwardhorsey/euclidean-rhythm',
     backgroundImg: 4,
     tech: ['React', 'Node.js', 'AWS S3', 'AWS Lambda', 'AWS Gateway API', 'AWS CodePipeline']

@@ -59,12 +59,12 @@ export const projects = [
   },
 
   {
-    name: 'Cleanup',
-    description: 'A python script for cleaning up your downloads folder.',
-    url: '',
-    github: 'https://github.com/edwardhorsey/downloads-folder-cleanup',
+    name: 'Heads Up Poker',
+    description: 'A game of heads up All-In-or-Fold poker. This is an in-progress project. The app uses AWS Gateway API for the websocket, AWS lambda, a single DynamoDB table, AWS Cognito for authentication and React TypeScript for the frontend. I am using AWS CodePipeline to deploy the application direct from GitHub.',
+    url: 'https://d3vj6y4539i61v.cloudfront.net/',
+    github: 'https://github.com/edwardhorsey/heads-up',
     backgroundImg: 7,
-    tech: ['Python']
+    tech: ['React', 'TypeScript', 'Python', 'AWS Lambda', 'AWS Gateway API', 'AWS Cognito', 'AWS CodePipeline']
   },
 
   {

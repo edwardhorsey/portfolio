@@ -23,7 +23,7 @@ export const projects: Project[] = [
     {
         name: 'Fred Again - The Sun',
         description:
-            'Website to display user submitted videos of sunsets from different locations around the globe. The project received 256 submissions.',
+            'Video carousel website to display user generated content. Fans submitted videos of themselves and their friends during sunset from different locations around the globe. The project received 256 submissions from 30 different countries.',
         url: 'https://fredagain.com/thesun/',
         github: '',
         images: ['/img/fred-again.png', '/img/fred-again-2.png'],
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     {
         name: 'Electronic Track Search',
         description:
-            'A full-stack web app which searches for information on a track release and provides results of DJ mixes which feature the track. The front end (built in React) uses AWS Gateway API and Lambda to conduct the API searches. 🔥🎛️',
+            'A full-stack web app which searches for information on a track release and provides results of DJ mixes which feature the track 🔥🎛️',
         url: 'https://electronictracksearch.com',
         github: 'https://github.com/edwardhorsey/ets',
         images: ['/img/electronic-track-search.png', '/img/electronic-track-search-2.png'],

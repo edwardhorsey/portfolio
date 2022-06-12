@@ -4,10 +4,54 @@ import { faAt, faPaintbrush, faUserAstronaut } from '@fortawesome/free-solid-svg
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head';
 import React from 'react';
+import { animated, useSpring } from 'react-spring';
 import MetaData from '../components/common/MetaData';
 import ProjectCard from '../components/ProjectCard';
 import { title } from '../config';
 import { projects } from '../data/projects';
+
+const Nav = () => {
+    const navSpring = useSpring({
+        from: {
+            distance: 100,
+            opacity: 0,
+        },
+        to: {
+            distance: 0,
+            opacity: 1,
+        },
+        delay: 200,
+    });
+
+    return (
+        <ul className="fixed top-0 right-0 p-5 flex justify-end gap-10 bg-white">
+            <animated.li
+                style={{
+                    opacity: navSpring.opacity,
+                    transform: navSpring.distance.to((x) => `translateX(${x * 3}px)`),
+                }}
+            >
+                <FontAwesomeIcon icon={faUserAstronaut} />
+            </animated.li>
+            <animated.li
+                style={{
+                    opacity: navSpring.opacity,
+                    transform: navSpring.distance.to((x) => `translateX(${x * 2}px)`),
+                }}
+            >
+                <FontAwesomeIcon icon={faPaintbrush} />
+            </animated.li>
+            <animated.li
+                style={{
+                    opacity: navSpring.opacity,
+                    transform: navSpring.distance.to((x) => `translateX(${x * 1}px)`),
+                }}
+            >
+                <FontAwesomeIcon icon={faEnvelope} />
+            </animated.li>
+        </ul>
+    );
+};
 
 export default function Site(): JSX.Element {
     return (
@@ -20,17 +64,7 @@ export default function Site(): JSX.Element {
 
                 <header className="flex justify-between p-5 text-2xl">
                     <h1>Edward Horsey</h1>
-                    <ul className="fixed top-0 right-0 p-5 flex justify-end gap-10 bg-white">
-                        <li>
-                            <FontAwesomeIcon icon={faUserAstronaut} />
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon={faPaintbrush} />
-                        </li>
-                        <li>
-                            <FontAwesomeIcon icon={faEnvelope} />
-                        </li>
-                    </ul>
+                    <Nav />
                 </header>
 
                 <section className="flex h-[95vh] w-full items-center justify-center">

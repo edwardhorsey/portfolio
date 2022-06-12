@@ -1,9 +1,7 @@
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faAt } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Head from 'next/head';
 import React from 'react';
 import MetaData from '../components/common/MetaData';
+import ContactIcons from '../components/ContactIcons';
 import Nav from '../components/Nav';
 import ProjectCard from '../components/ProjectCard';
 import { title } from '../config';
@@ -50,17 +48,7 @@ export default function Site(): JSX.Element {
                     <section className="flex h-[95vh] w-full items-center justify-center">
                         <div className="flex flex-col lg:flex-row items-center w-4/5 lg:w-3/5">
                             <h1 className="font-bold text-6xl p-5">Contact</h1>
-                            <ul className="flex gap-5 lg:gap-0 justify-center lg:justify-start lg:flex-col w-full text-4xl">
-                                <li>
-                                    <FontAwesomeIcon icon={faAt} />
-                                </li>
-                                <li>
-                                    <FontAwesomeIcon icon={faLinkedin} />
-                                </li>
-                                <li>
-                                    <FontAwesomeIcon icon={faGithub} />
-                                </li>
-                            </ul>
+                            <ContactIcons />
                         </div>
                     </section>
                 </main>

@@ -1,47 +1,35 @@
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faPaintbrush, faUserAstronaut } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { animated, useSpring } from 'react-spring';
+import { animated, useTrail } from 'react-spring';
+
+const items = [
+    { key: 'a', icon: <FontAwesomeIcon icon={faUserAstronaut} /> },
+    { key: 'b', icon: <FontAwesomeIcon icon={faPaintbrush} /> },
+    { key: 'c', icon: <FontAwesomeIcon icon={faEnvelope} /> },
+];
 
 const Nav = (): JSX.Element => {
-    const navSpring = useSpring({
-        from: {
-            distance: 100,
-            opacity: 0,
-        },
-        to: {
-            distance: 0,
-            opacity: 1,
-        },
+    const trail = useTrail(3, {
+        from: { distance: 8, opacity: 0 },
+        to: { distance: 0, opacity: 1 },
+        config: { mass: 5, tension: 2000, friction: 200 },
         delay: 200,
     });
 
     return (
         <ul className="fixed top-0 right-0 p-5 flex justify-end gap-10 bg-white">
-            <animated.li
-                style={{
-                    opacity: navSpring.opacity,
-                    transform: navSpring.distance.to((x) => `translateX(${x * 3}px)`),
-                }}
-            >
-                <FontAwesomeIcon icon={faUserAstronaut} />
-            </animated.li>
-            <animated.li
-                style={{
-                    opacity: navSpring.opacity,
-                    transform: navSpring.distance.to((x) => `translateX(${x * 2}px)`),
-                }}
-            >
-                <FontAwesomeIcon icon={faPaintbrush} />
-            </animated.li>
-            <animated.li
-                style={{
-                    opacity: navSpring.opacity,
-                    transform: navSpring.distance.to((x) => `translateX(${x * 1}px)`),
-                }}
-            >
-                <FontAwesomeIcon icon={faEnvelope} />
-            </animated.li>
+            {trail.map((styles, idx) => (
+                <animated.li
+                    key={items[idx].key}
+                    style={{
+                        opacity: styles.opacity,
+                        transform: styles.distance.to((x) => `translateX(${x * (idx + 1)}rem)`),
+                    }}
+                >
+                    {items[idx].icon}
+                </animated.li>
+            ))}
         </ul>
     );
 };

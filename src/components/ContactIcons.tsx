@@ -26,7 +26,10 @@ const ContactIcons = (): JSX.Element => {
     }, [inView, hasEntered]);
 
     return (
-        <ul ref={ref} className="flex gap-5 lg:gap-2 justify-center lg:justify-start lg:flex-col w-full text-4xl">
+        <ul
+            ref={ref}
+            className="flex gap-6 lg:gap-3 lg:pt-2 justify-center lg:justify-start lg:flex-col w-full text-4xl"
+        >
             {trail.map((styles, idx) => (
                 <animated.li
                     key={items[idx].key}

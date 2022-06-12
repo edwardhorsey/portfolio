@@ -34,9 +34,9 @@ const ProjectCard = ({ project }: { project: Project }): JSX.Element => {
             onMouseLeave={!isMobile ? () => setIsActive(false) : undefined}
         >
             <animated.div style={{ opacity: cardSpring.opacity }} className="w-full h-full flex flex-col justify-end">
-                <h1 style={{ filter: `drop-shadow(1px 1px 2px black)` }} className="text-2xl font-bold">
+                <h3 style={{ filter: `drop-shadow(1px 1px 2px black)` }} className="text-2xl font-bold">
                     {project.name}
-                </h1>
+                </h3>
                 <p style={{ filter: `drop-shadow(1px 1px 2px black)` }} className="text-lg xl:text-xl mt-2">
                     {project.description}
                 </p>

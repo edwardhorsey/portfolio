@@ -23,7 +23,7 @@ export const projects: Project[] = [
     {
         name: 'Fred Again - The Sun',
         description:
-            'Video carousel website to display user generated content. Fans submitted videos of themselves and their friends during sunset from different locations around the globe. The project received 256 submissions from 30 different countries.',
+            'Video carousel website to display user generated content. Fans submitted videos of themselves and their friends during sunset from different locations around the globe. The project received 256 submissions from 30+ different countries.',
         url: 'https://fredagain.com/thesun/',
         github: '',
         images: ['/img/f-again.png', '/img/f-again-2.png'],

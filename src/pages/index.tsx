@@ -25,9 +25,9 @@ export default function Site(): JSX.Element {
 
                 <main className="max-w-[1600px] mx-auto">
                     <section className="flex h-[95vh] w-full items-center justify-center">
-                        <div className="flex flex-col lg:flex-row w-3/5">
-                            <h1 className="font-bold text-6xl p-5 lg:w-2/5">Full Stack Developer</h1>
-                            <div className="text-4xl p-5 lg:w-3/5">
+                        <div className="flex flex-col lg:flex-row w-4/5 lg:w-3/5">
+                            <h1 className="font-bold text-6xl xl:text-6xl p-5 w-auto xl:w-2/5">Full Stack Developer</h1>
+                            <div className="text-4xl p-5 w-auto xl:w-3/5">
                                 <p className="mb-2">👋 Hi, I&apos;m Ed</p>
                                 <p className="mb-2">
                                     I&apos;m a developer with a passion for music based in London, UK.
@@ -37,7 +37,7 @@ export default function Site(): JSX.Element {
                     </section>
 
                     <section className="flex flex-col w-full items-center justify-center">
-                        <div className="flex w-3/5 justify-end mb-8">
+                        <div className="flex w-4/5 lg:w-3/5 justify-end mb-12">
                             <h1 className="font-bold text-6xl p-5">Projects</h1>
                         </div>
                         <div className="flex flex-wrap justify-center gap-10 w-11/12 h-full">
@@ -48,7 +48,7 @@ export default function Site(): JSX.Element {
                     </section>
 
                     <section className="flex h-[95vh] w-full items-center justify-center">
-                        <div className="flex flex-col lg:flex-row items-center w-3/5">
+                        <div className="flex flex-col lg:flex-row items-center w-4/5 lg:w-3/5">
                             <h1 className="font-bold text-6xl p-5">Contact</h1>
                             <ul className="flex gap-5 lg:gap-0 justify-center lg:justify-start lg:flex-col w-full text-4xl">
                                 <li>

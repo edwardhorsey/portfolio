@@ -26,7 +26,7 @@ export const projects: Project[] = [
             'Video carousel website to display user generated content. Fans submitted videos of themselves and their friends during sunset from different locations around the globe. The project received 256 submissions from 30 different countries.',
         url: 'https://fredagain.com/thesun/',
         github: '',
-        images: ['/img/fred-again-2.png', '/img/fred-again-2.png'],
+        images: ['/img/f-again.png', '/img/f-again-2.png'],
         tech: ['React', 'react-spring'],
         id: 2,
     },

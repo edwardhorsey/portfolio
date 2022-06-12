@@ -6,35 +6,34 @@ import ProjectLink from './ProjectLink';
 import ProjectTechTag from './ProjectTechTag';
 
 const ProjectCard = ({ project }: { project: Project }): JSX.Element => {
+    const screenType = useScreenType();
+    const isMobile = screenType === MOBILE;
     const [isActive, setIsActive] = useState(false);
     const cardSpring = useSpring({
-        opacity: isActive ? 1 : 0,
+        from: {
+            opacity: 0,
+        },
+        to: {
+            opacity: isMobile ? 1 : isActive ? 1 : 0,
+        },
         config: { duration: 500 },
     });
 
-    const screenType = useScreenType();
-    const isMobile = screenType === MOBILE;
-
     return (
         <animated.article
-            className="w-full lg:w-[45%] min-h-96 bg-center bg-cover text-white p-2"
+            className="w-full lg:w-[45%] min-h-[25rem] bg-center bg-cover text-white p-2"
             key={project.name}
             style={{
-                backgroundImage: isMobile
-                    ? `linear-gradient(rgba(0, 0, 0, ${0.6}), rgba(0, 0, 0, ${0.6})), url(${project.images[0]})`
-                    : cardSpring.opacity.to((opacity) => {
-                          const value = opacity * 0.6;
+                backgroundImage: cardSpring.opacity.to((opacity) => {
+                    const value = opacity * 0.6;
 
-                          return `linear-gradient(rgba(0, 0, 0, ${value}), rgba(0, 0, 0, ${value})), url(${project.images[0]})`;
-                      }),
+                    return `linear-gradient(rgba(0, 0, 0, ${value}), rgba(0, 0, 0, ${value})), url(${project.images[0]})`;
+                }),
             }}
             onMouseEnter={!isMobile ? () => setIsActive(true) : undefined}
             onMouseLeave={!isMobile ? () => setIsActive(false) : undefined}
         >
-            <animated.div
-                style={{ opacity: isMobile ? 1 : cardSpring.opacity }}
-                className="w-full h-full flex flex-col justify-end"
-            >
+            <animated.div style={{ opacity: cardSpring.opacity }} className="w-full h-full flex flex-col justify-end">
                 <h1 style={{ filter: `drop-shadow(1px 1px 2px black)` }} className="text-2xl font-bold">
                     {project.name}
                 </h1>

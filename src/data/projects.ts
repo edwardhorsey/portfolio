@@ -26,13 +26,13 @@ export const projects: Project[] = [
             'Video carousel website to display user generated content. Fans submitted videos of themselves and their friends during sunset from different locations around the globe. The project received 256 submissions from 30 different countries.',
         url: 'https://fredagain.com/thesun/',
         github: '',
-        images: ['/img/fred-again.png', '/img/fred-again-2.png'],
-        tech: ['React'],
+        images: ['/img/fred-again-2.png', '/img/fred-again-2.png'],
+        tech: ['React', 'react-spring'],
         id: 2,
     },
 
     {
-        name: 'Roland-react-8',
+        name: 'Roland-React-8',
         description:
             'A drum-machine performing some of my favourite samples from the Roland TR-808. The sample controls are designed for playing live. Distortion included for added techno. Built with React and the Web Audio API. 🕺💃',
         url: 'https://rolandreact.com/',
@@ -49,18 +49,18 @@ export const projects: Project[] = [
         url: 'https://electronictracksearch.com',
         github: 'https://github.com/edwardhorsey/ets',
         images: ['/img/electronic-track-search.png', '/img/electronic-track-search-2.png'],
-        tech: ['Next.js'],
+        tech: ['Next.js', 'Discogs API'],
         id: 4,
     },
 
     {
-        name: 'Euclidean Rhythm',
+        name: 'Euclidean Rhythm Generator',
         description:
-            'A sequencer for playing Euclidean Rhythms. I create a lambda which generates a downlaodable midi file, saved on AWS S3.',
+            'A sequencer for experimenting with Euclidean Rhythms. You can export your rhythm as a MIDI file. The site uses a Lambda function to generate the MIDI file which in turn is saved on AWS S3.',
         url: 'https://euclidean-ryhthm.web.app/',
         github: 'https://github.com/edwardhorsey/euclidean-rhythm',
         images: ['/img/euclidean.png'],
-        tech: ['React', 'Web Audio API', 'AWS S3', 'AWS Lambda', 'Serverless'],
+        tech: ['React', 'Web Audio API', 'AWS S3', 'AWS Lambda', 'Serverless Framework'],
         id: 5,
     },
 ];

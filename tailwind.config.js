@@ -32,6 +32,9 @@ module.exports = {
       },
       minHeight: {
         96: '24rem',
+      },
+      dropShadow: {
+        "md-black": '1px 1px 2px black',
       }
     },
     fontFamily: {

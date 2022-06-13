@@ -34,12 +34,8 @@ const ProjectCard = ({ project }: { project: Project }): JSX.Element => {
             onMouseLeave={!isMobile ? () => setIsActive(false) : undefined}
         >
             <animated.div style={{ opacity: cardSpring.opacity }} className="w-full h-full flex flex-col justify-end">
-                <h3 style={{ filter: `drop-shadow(1px 1px 2px black)` }} className="text-2xl font-bold">
-                    {project.name}
-                </h3>
-                <p style={{ filter: `drop-shadow(1px 1px 2px black)` }} className="text-lg xl:text-xl mt-2">
-                    {project.description}
-                </p>
+                <h3 className="text-2xl font-bold drop-shadow-md-black">{project.name}</h3>
+                <p className="text-lg xl:text-xl mt-2 drop-shadow-md-black">{project.description}</p>
                 <div className="flex flex-wrap gap-x-2 gap-y-2 mt-3">
                     {project.tech.map((item) => (
                         <ProjectTechTag key={`${project.name}.${item}`} name={item} />

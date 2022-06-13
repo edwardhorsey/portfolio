@@ -13,17 +13,17 @@ const items = [
 
 const ContactIcons = (): JSX.Element => {
     const [ref, inView] = useInView();
-    const [hasEntered, setHasEntered] = useState(false);
+    const [enter, setEnter] = useState(false);
     const trail = useTrail(3, {
-        distance: hasEntered ? 0 : -4,
-        opacity: hasEntered ? 1 : 0,
-        config: { mass: 5, tension: 2000, friction: 200 },
+        distance: enter ? 0 : -4,
+        opacity: enter ? 1 : 0,
+        config: { mass: 18, tension: 2500, friction: 200 },
         delay: 200,
     });
 
     useEffect(() => {
-        if (inView && !hasEntered) setHasEntered(true);
-    }, [inView, hasEntered]);
+        if (inView && !enter) setEnter(true);
+    }, [inView, enter]);
 
     return (
         <ul

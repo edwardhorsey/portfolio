@@ -45,7 +45,7 @@ export const projects: Project[] = [
     {
         name: 'Electronic Track Search',
         description:
-            'A full-stack web app which searches for information on a track release and provides results of DJ mixes which feature the track 🔥🎛️',
+            'A web application which searches for information on a track release and provides results of DJ mixes which feature the track 🔥🎛️',
         url: 'https://electronictracksearch.com',
         github: 'https://github.com/edwardhorsey/ets',
         images: ['/img/electronic-track-search.png', '/img/electronic-track-search-2.png'],
@@ -56,7 +56,7 @@ export const projects: Project[] = [
     {
         name: 'Euclidean Rhythm Generator',
         description:
-            'A sequencer for experimenting with Euclidean Rhythms. You can export your rhythm as a MIDI file. The site uses a Lambda function to generate the MIDI file which in turn is saved on AWS S3.',
+            'A sequencer for experimenting with euclidean rhythms. You can export your rhythm as a MIDI file. The site uses a Lambda function to generate the MIDI file which in turn is saved on AWS S3.',
         url: 'https://euclidean-ryhthm.web.app/',
         github: 'https://github.com/edwardhorsey/euclidean-rhythm',
         images: ['/img/euclidean.png'],

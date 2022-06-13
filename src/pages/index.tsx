@@ -19,7 +19,7 @@ export default function Site(): JSX.Element {
                     <title>{title}</title>
                 </Head>
 
-                <header className="flex justify-between p-5 text-2xl">
+                <header className="flex justify-between p-4 lg:p-5 text-2xl">
                     <h1>Edward Horsey</h1>
                     <Nav />
                 </header>
@@ -56,7 +56,9 @@ export default function Site(): JSX.Element {
                     </section>
                 </main>
 
-                <footer className="p-5 text-base self-end">Copyright © Edward Horsey {new Date().getFullYear()}</footer>
+                <footer className="p-4 lg:p-5 text-base self-end">
+                    Copyright © Edward Horsey {new Date().getFullYear()}
+                </footer>
                 <div id="modal-root" />
             </div>
         </>

@@ -4,12 +4,12 @@
 
 @font-face {
     font-family: 'RobotoThin';
-    src: local('RobotoThin'), url(../fonts/Roboto-Thin.ttf);
+    src: local('RobotoThin'), url(/fonts/Roboto-Thin.ttf);
 }
 
 @font-face {
     font-family: 'RobotoLight';
-    src: local('RobotoLight'), url(../fonts/Roboto-Light.ttf);
+    src: local('RobotoLight'), url(/fonts/Roboto-Light.ttf);
 }
 
 /* Prevent pull-down refresh on mobile */

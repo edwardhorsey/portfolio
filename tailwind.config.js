@@ -27,6 +27,15 @@ module.exports = {
         },
         blackOpacity30: "rgba(255, 255, 255, 0.01)",
       },
+      width: {
+        fit: 'fit-content',
+      },
+      minHeight: {
+        96: '24rem',
+      },
+      dropShadow: {
+        "md-black": '1px 1px 2px black',
+      }
     },
     fontFamily: {
       sans: ['RobotoThin'],

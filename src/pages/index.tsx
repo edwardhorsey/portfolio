@@ -59,7 +59,6 @@ export default function Site(): JSX.Element {
                 <footer className="p-4 lg:p-5 text-base self-end">
                     Copyright © Edward Horsey {new Date().getFullYear()}
                 </footer>
-                <div id="modal-root" />
             </div>
         </>
     );

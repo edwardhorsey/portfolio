@@ -12,7 +12,7 @@ export const projects: Project[] = [
     {
         name: 'Generate your own F*ck you',
         description:
-            "Type in your own lyric and create your own chorus of GAYLE's song abcdefu. Download and share audio and a video of your chorus. I used Google Text-to-Speech API & Tone.js to create the audio and FFMPEG to create the video.",
+            "Type in your own lyric and create your own chorus of GAYLE's song abcdefu. Download and share audio and a video of your chorus. I used Google Text-to-Speech API & Tone.js to create the audio snippet and FFMPEG in AWS Lambda to create the video.",
         url: 'https://abcde-fu-com.nds.acquia-psi.com/?token=1juf3j7gcb2k8gha',
         github: '',
         images: ['/img/gayle.png', '/img/gayle-2.png'],
@@ -49,7 +49,7 @@ export const projects: Project[] = [
         url: 'https://electronictracksearch.com',
         github: 'https://github.com/edwardhorsey/ets',
         images: ['/img/electronic-track-search.png', '/img/electronic-track-search-2.png'],
-        tech: ['Next.js', 'Discogs API'],
+        tech: ['Next.js', 'Discogs API', 'Storybook'],
         id: 4,
     },
 

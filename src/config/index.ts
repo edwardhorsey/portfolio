@@ -1,6 +1,6 @@
 export const title = 'Edward Horsey Portfolio';
-export const description = 'Edward Horsey is a software developer and designer based in London, UK.';
-export const siteUrl = 'https://www.edwardhorsey.io';
+export const description = 'Edward Horsey is a full stack software developer based in London, UK.';
+export const siteUrl = 'https://www.edwardhorsey.dev';
 export const ogImage = '';
 export const favicon = `/img/favicon.png`;
 

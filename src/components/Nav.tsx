@@ -25,7 +25,7 @@ const Nav = (): JSX.Element => {
     });
 
     return (
-        <ul className="fixed top-0 right-0 p-2 lg:p-3 flex justify-end gap-2 lg:gap-10 bg-white transition-all duration-500 z-10">
+        <ul className="fixed top-0 right-0 p-2 lg:p-3 flex justify-end gap-2 lg:gap-10 bg-white transition-all duration-500 z-30">
             {trail.map((styles, idx) => (
                 <animated.li
                     key={items[idx].key}

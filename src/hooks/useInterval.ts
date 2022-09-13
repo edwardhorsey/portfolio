@@ -4,7 +4,6 @@ type Delay = number | null;
 type TimerHandler = (...args: any[]) => void;
 
 const useInterval = (callback: TimerHandler, delay: Delay): void => {
-    console.log(delay);
     const savedCallbackRef = useRef<TimerHandler>();
 
     useEffect(() => {

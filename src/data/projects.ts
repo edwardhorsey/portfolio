@@ -4,11 +4,23 @@ export interface Project {
     url: string;
     github: string;
     images: string[];
+    video?: string;
     tech: string[];
     id: number;
 }
 
 export const projects: Project[] = [
+    {
+        name: 'Piñata',
+        description:
+            'Commisioned for band Third Eye Blind, this is a game where users attempt to break a Piñata in order to be entered into a prize draw. I used the Matter.js physics engine and react-spring to create the animations and howler.js to trigger the sound effects. The site was built in Next.js with React hooks.',
+        url: 'https://www.thirdeyeblindgame.com',
+        github: '',
+        images: [],
+        video: '/video/pinata-800.mp4',
+        tech: ['React', 'Matter.js', 'react-spring', 'howler.js', 'Spotify Web Playback SDK'],
+        id: 6,
+    },
     {
         name: 'Generate your own F*ck you',
         description:

@@ -3,6 +3,7 @@ import { animated, useSpring } from 'react-spring';
 import { Project } from '../data/projects';
 import useScreenType, { MOBILE } from '../hooks/useScreenType';
 import BackgroundImageSlideshow from './BackgroundImageSlideshow';
+import BackgroundVideo from './BackgroundVideo';
 import ProjectCardContent from './ProjectCardContent';
 
 const ProjectCard = ({ project }: { project: Project }): JSX.Element => {
@@ -22,7 +23,11 @@ const ProjectCard = ({ project }: { project: Project }): JSX.Element => {
             onMouseEnter={!isMobile ? () => setIsActive(true) : undefined}
             onMouseLeave={!isMobile ? () => setIsActive(false) : undefined}
         >
-            <BackgroundImageSlideshow projectImages={project.images} cardSpringOpacity={cardSpring.opacity} />
+            {project?.video ? (
+                <BackgroundVideo videoSrc={project.video} cardSpringOpacity={cardSpring.opacity} />
+            ) : (
+                <BackgroundImageSlideshow projectImages={project.images} cardSpringOpacity={cardSpring.opacity} />
+            )}
             <animated.div
                 style={{ opacity: cardSpring.opacity }}
                 className="w-full h-full flex flex-col justify-end z-20"

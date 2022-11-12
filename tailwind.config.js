@@ -20,8 +20,6 @@ module.exports = {
         mockRed: '#bd3c3c',
         primaryPurple: '#1D192A',
         primaryPink: '#C35265',
-        // primaryDarker: '#FC6E00',
-        // secondary: '#000000',
         blackTransparent: {
           DEFAULT: 'rgba(0, 0, 0, 0.7)',
         },
@@ -38,14 +36,11 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ['RobotoThin'],
-      serif: ['RobotoThin'],
-      mono: ['RobotoThin'],
-      display: ['RobotoThin'],
-      body: ['RobotoThin'],
-      button:['RobotoLight'],
-      // footer: ['HelveticaNeue'],
-      // terms: ['Arial', 'Helvetica Neue', 'sans-serif'],
+      sans: ['RobotoThin, Sans-Serif'],
+      serif: ['RobotoThin, Sans-Serif'],
+      mono: ['RobotoThin, Sans-Serif'],
+      display: ['RobotoThin, Sans-Serif'],
+      body: ['RobotoThin, Sans-Serif'],
     },
     screens: {
       xxs: '360px', // this is custom

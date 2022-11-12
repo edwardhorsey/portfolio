@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import React from 'react';
+import CloudPractitionerCertificate from '../components/CloudPractitionerCertificate';
 import MetaData from '../components/common/MetaData';
 import ContactIcons from '../components/ContactIcons';
+import Heading from '../components/Heading';
 import Nav from '../components/Nav';
 import ProjectCard from '../components/ProjectCard';
 import { title } from '../config';
@@ -27,8 +28,8 @@ export default function Site(): JSX.Element {
                 <main className="max-w-[1600px] mx-auto">
                     <section ref={aboutMeRef} className="flex h-[95vh] w-full items-center justify-center">
                         <div className="flex flex-col lg:flex-row w-4/5 lg:w-3/5">
-                            <h2 className="font-bold text-6xl xl:text-6xl p-5 w-auto xl:w-2/5">Full Stack Developer</h2>
-                            <div className="text-4xl p-5 w-auto xl:w-3/5">
+                            <Heading className="w-auto xl:w-2/5" text="Full Stack Developer" />
+                            <div className="text-3xl xs:text-4xl p-5 w-auto xl:w-3/5">
                                 <p className="mb-2">👋 Hi, I&apos;m Ed</p>
                                 <p className="mb-2">
                                     I&apos;m a developer with a passion for music based in London, UK.
@@ -39,18 +40,25 @@ export default function Site(): JSX.Element {
 
                     <section ref={projectsRef} className="flex flex-col w-full items-center justify-center">
                         <div className="flex w-4/5 lg:w-3/5 justify-end mb-12">
-                            <h2 className="font-bold text-6xl p-5">Projects</h2>
+                            <Heading text="Projects" />
                         </div>
                         <div className="flex flex-wrap justify-center gap-10 w-11/12 h-full">
                             {portfolioProjects.map((project) => (
                                 <ProjectCard project={project} key={project.id} />
                             ))}
                         </div>
+
+                        <div className="flex flex-col w-4/5 lg:w-3/5 items-center lg:items-start mt-12">
+                            <Heading text="Certifications" />
+                            <div className="flex justify-center w-full">
+                                <CloudPractitionerCertificate />
+                            </div>
+                        </div>
                     </section>
 
                     <section ref={contactRef} className="flex h-[95vh] w-full items-center justify-center">
                         <div className="flex flex-col lg:flex-row items-center w-4/5 lg:w-3/5">
-                            <h2 className="font-bold text-6xl p-5">Contact</h2>
+                            <Heading text="Contact" />
                             <ContactIcons />
                         </div>
                     </section>

@@ -47,7 +47,7 @@ export const projects: Project[] = [
         name: 'Roland-React-8',
         description:
             'A drum-machine performing some of my favourite samples from the Roland TR-808. The sample controls are designed for playing live. Distortion included for added techno. Built with React and the Web Audio API. 🕺💃',
-        url: 'https://rolandreact.com/',
+        url: 'https://roland-react-8.web.app/',
         github: 'http://github.com/edwardhorsey/roland-react-8',
         images: ['/img/roland-react.png', '/img/roland-react-2.png'],
         tech: ['React', 'Web Audio API', 'Firebase'],

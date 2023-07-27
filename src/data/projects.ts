@@ -44,13 +44,13 @@ export const projects: Project[] = [
     },
 
     {
-        name: 'Roland-React-8',
+        name: 'Drum Machine',
         description:
-            'A drum-machine performing some of my favourite samples from the Roland TR-808. The sample controls are designed for playing live. Distortion included for added techno. Built with React and the Web Audio API. 🕺💃',
-        url: 'https://roland-react-8.web.app/',
+            'A drum-machine performing some of my favourite samples from the Roland TR-808. The sample controls are designed for playing live. Distortion included for added techno. Connect and save your beats. 🕺💃',
+        url: 'https://drummachine.xyz/',
         github: 'http://github.com/edwardhorsey/roland-react-8',
         images: ['/img/roland-react.png', '/img/roland-react-2.png'],
-        tech: ['React', 'Web Audio API', 'Firebase'],
+        tech: ['Next.js', 'Web Audio API', 'TypeScript', 'Prisma'],
         id: 3,
     },
 

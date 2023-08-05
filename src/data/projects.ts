@@ -58,10 +58,10 @@ export const projects: Project[] = [
         name: 'Electronic Track Search',
         description:
             'A web application which searches for information on a track release and provides results of DJ mixes which feature the track 🔥🎛️',
-        url: 'https://electronictracksearch.com',
+        url: 'https://www.tracksearch.xyz',
         github: 'https://github.com/edwardhorsey/ets',
         images: ['/img/electronic-track-search.png', '/img/electronic-track-search-2.png'],
-        tech: ['Next.js', 'Discogs API', 'Storybook'],
+        tech: ['Next.js', 'Discogs API', 'Google Search API'],
         id: 4,
     },
 

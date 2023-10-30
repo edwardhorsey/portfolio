@@ -11,6 +11,18 @@ export interface Project {
 
 export const projects: Project[] = [
     {
+        name: 'Drum Machine',
+        description:
+            'A drum-machine performing some of my favourite samples from the Roland TR-808. The sample controls are designed for playing live. Distortion included for added techno. Connect and save your beats. 🕺💃',
+        url: 'https://drummachine.xyz/',
+        github: 'http://github.com/edwardhorsey/roland-react-8',
+        images: [],
+        video: '/video/drum-machine.mp4',
+        tech: ['Next.js', 'Web Audio API', 'TypeScript', 'Prisma'],
+        id: 3,
+    },
+
+    {
         name: 'Piñata',
         description:
             'Commisioned for band Third Eye Blind, this is a game where users attempt to break a Piñata in order to be entered into a prize draw. I used the Matter.js physics engine and react-spring to create the animations and howler.js to trigger the sound effects. The site was built in Next.js with React hooks.',
@@ -44,23 +56,12 @@ export const projects: Project[] = [
     },
 
     {
-        name: 'Drum Machine',
-        description:
-            'A drum-machine performing some of my favourite samples from the Roland TR-808. The sample controls are designed for playing live. Distortion included for added techno. Connect and save your beats. 🕺💃',
-        url: 'https://drummachine.xyz/',
-        github: 'http://github.com/edwardhorsey/roland-react-8',
-        images: ['/img/roland-react.png', '/img/roland-react-2.png'],
-        tech: ['Next.js', 'Web Audio API', 'TypeScript', 'Prisma'],
-        id: 3,
-    },
-
-    {
         name: 'Electronic Track Search',
         description:
-            'A web application which searches for information on a track release and provides results of DJ mixes which feature the track 🔥🎛️',
+            'A web application which searches (by web-scraping) for information on a track release and provides results of DJ mixes which feature the track 🔥🎛️',
         url: 'https://www.tracksearch.xyz',
         github: 'https://github.com/edwardhorsey/ets',
-        images: ['/img/electronic-track-search.png', '/img/electronic-track-search-2.png'],
+        images: ['/img/electronic-track-search-3.png', '/img/electronic-track-search-4.png'],
         tech: ['Next.js', 'Discogs API', 'Google Search API'],
         id: 4,
     },
@@ -71,7 +72,8 @@ export const projects: Project[] = [
             'A sequencer for experimenting with euclidean rhythms. You can export your rhythm as a MIDI file. The site uses a Lambda function to generate the MIDI file which in turn is saved on AWS S3.',
         url: 'https://euclidean-ryhthm.web.app/',
         github: 'https://github.com/edwardhorsey/euclidean-rhythm',
-        images: ['/img/euclidean.png'],
+        images: [],
+        video: '/video/euclidean-rhythm.mp4',
         tech: ['React', 'Web Audio API', 'AWS S3', 'AWS Lambda', 'Serverless Framework'],
         id: 5,
     },

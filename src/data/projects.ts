@@ -37,22 +37,11 @@ export const projects: Project[] = [
         name: 'Generate your own F*ck you',
         description:
             "Type in your own lyric and create your own chorus of GAYLE's song abcdefu. Download and share audio and a video of your chorus. I used Google Text-to-Speech API & Tone.js to create the audio snippet and FFMPEG in AWS Lambda to create the video.",
-        url: 'https://abcde-fu-com.nds.acquia-psi.com/?token=1juf3j7gcb2k8gha',
+        url: 'https://abcdefu.edwardhorsey.dev',
         github: '',
         images: ['/img/gayle.png', '/img/gayle-2.png'],
         tech: ['React', 'Tone.js', 'AWS Lambda', 'AWS S3', 'FFmpeg', 'Google Text to Speech'],
         id: 1,
-    },
-
-    {
-        name: 'Fred Again - The Sun',
-        description:
-            'Video carousel website to display user generated content. Fans submitted videos of themselves and their friends during sunset from different locations around the globe. The project received 256 submissions from 30+ different countries.',
-        url: 'https://fredagain.com/thesun/',
-        github: '',
-        images: ['/img/f-again.png', '/img/f-again-2.png'],
-        tech: ['React', 'react-spring'],
-        id: 2,
     },
 
     {

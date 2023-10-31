@@ -18,7 +18,7 @@ const ProjectCard = ({ project }: { project: Project }): JSX.Element => {
 
     return (
         <animated.article
-            className="w-full lg:w-[45%] min-h-[25rem] text-white p-2 relative"
+            className="w-full lg:w-[calc(50%-1.25rem)] min-h-[25rem] text-white p-2 relative"
             key={project.name}
             onMouseEnter={!isMobile ? () => setIsActive(true) : undefined}
             onMouseLeave={!isMobile ? () => setIsActive(false) : undefined}

@@ -1,4 +1,4 @@
-import { createContext, useContext, useRef } from 'react';
+import { ReactNode, createContext, useContext, useRef } from 'react';
 
 interface UIRefsContext {
     aboutMeRef: React.RefObject<HTMLDivElement> | null;
@@ -12,7 +12,7 @@ const UIRefsContext = createContext<UIRefsContext>({
     contactRef: null,
 });
 
-export const UIRefsProvider = ({ children }: { children: JSX.Element }): JSX.Element => {
+export const UIRefsProvider = ({ children }: { children: ReactNode }): JSX.Element => {
     const aboutMeRef = useRef<HTMLDivElement>(null);
     const projectsRef = useRef<HTMLDivElement>(null);
     const contactRef = useRef<HTMLDivElement>(null);

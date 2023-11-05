@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import type { AppProps } from 'next/app';
 import { UIRefsProvider } from '../contexts/UiRefsContext';
 import '../styles/globals.scss';
@@ -8,13 +9,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     return (
         <UIRefsProvider>
             <Component {...pageProps} />
+            <Analytics />
         </UIRefsProvider>
     );
 }
 
 export default MyApp;
-
-// Force no server-side rendering
-// export default dynamic(() => Promise.resolve(MyApp), {
-//   ssr: false,
-// });
